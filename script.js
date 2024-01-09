@@ -25,6 +25,6 @@ map.on('click', (event)=> {
     document.getElementById('latitude').value = event.latlng.lat;
     document.getElementById('longitude').value = event.latlng.lng;
     document.getElementById('pga').innerHTML = (event.latlng.lng + event.latlng.lat)/2;
-    
+    document.getElementById('details').innerHTML = data[0];
     
 })
