@@ -1,7 +1,4 @@
- fetch("./NT.json") 
-        .then((res) => { 
-        return res.json(); 
-    }) 
+
 let mapOptions = {
     center:[28.17855984939698,84.03442382812501],
     zoom:10
