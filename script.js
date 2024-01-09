@@ -1,4 +1,7 @@
-
+ fetch("./NT.json") 
+        .then((res) => { 
+        return res.json(); 
+    }) 
 let mapOptions = {
     center:[28.17855984939698,84.03442382812501],
     zoom:10
@@ -22,5 +25,6 @@ map.on('click', (event)=> {
     document.getElementById('latitude').value = event.latlng.lat;
     document.getElementById('longitude').value = event.latlng.lng;
     document.getElementById('pga').innerHTML = (event.latlng.lng + event.latlng.lat)/2;
+    
     
 })
